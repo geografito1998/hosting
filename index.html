@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PADRÓN DE PALENQUES PARA LA PRODUCCIÓN DE MEZCAL DEL ESTADO DE PUEBLA 2022-2024</title>
+    
+    <!-- Enlace a la fuente Poppins desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos generales del cuerpo de la página */
+        body {
+            background-color: #f0f0f0; /* Color de fondo para toda la página */
+            margin: 0;
+            font-family: 'Poppins', sans-serif; /* Aplicando la fuente Poppins a todo el texto */
+        }
+
+        /* Estilos para el contenedor del título */
+        .header {
+            background-color: #420c0c; /* Color de fondo del título y subtítulo */
+            color: white; /* Color del texto del título y subtítulo */
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Necesario para posicionar las imágenes */
+        }
+
+        .header-content {
+            display: inline-block;
+            max-width: calc(60% - 100px); /* Ajusta el ancho según el tamaño de las imágenes y el espacio necesario */
+            vertical-align: auto; /* Alinea verticalmente el contenido del texto */
+        }
+
+        /* Imágenes a los costados del título */
+        .header img {
+            position: absolute;
+            top: 30px; /* Alinea las imágenes en la parte superior del contenedor */
+            height: 120px; /* Ajusta la altura de las imágenes */
+        }
+
+        .header .left-image {
+            left: 120px; /* Ajusta el espacio desde el borde izquierdo */
+        }
+
+        .header .right-image {
+            right: 45px; /* Ajusta el espacio desde el borde derecho */
+        }
+
+        h1 {
+            margin: 0;
+            font-weight: 500; /* Peso de la fuente del título */
+        }
+
+        h2 {
+            margin: 10px 0 0;
+            font-weight: 300; /* Peso de la fuente del subtítulo */
+        }
+
+        /* Estilos para el contenedor del contenido */
+        .content {
+            display: flex; /* Usar flexbox para alinear los elementos en línea */
+            justify-content: space-between; /* Espacio entre los elementos */
+            margin: 20px; /* Espacio alrededor del contenedor */
+        }
+
+        /* Estilos para el contenedor del mapa */
+        #google_my_map {
+            flex: 2; /* Toma el doble de espacio comparado con el cuadro de descripción */
+            height: 700px; /* Ajusta la altura del mapa */
+            width: 700px;   /* Ajusta el ancho del mapa */
+            background-color: white; /* Color de fondo del contenedor del mapa */
+            border: 2px solid #b8b9b8; /* Borde alrededor del mapa */
+        }
+
+        /* Estilos para el cuadro de descripción */
+        .description-box {
+            flex: 1; /* Toma el espacio restante */
+            background-color: white; /* Color de fondo del cuadro de descripción */
+            border: 2px solid #b8b9b8; /* Borde alrededor del cuadro */
+            padding: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del cuadro */
+            border-radius: 5px; /* Bordes redondeados */
+            font-family: 'Poppins', sans-serif; /* Aplicando la fuente Poppins */
+            font-size: 18px; /* Tamaño de la fuente más grande */
+            font-weight: 400; /* Peso de la fuente */
+            text-align: justify; /* Justificar el texto dentro del cuadro */
+        }
+
+        .download-link {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #4CAF50; /* Color de fondo del botón de descarga */
+            color: white; /* Color del texto del botón */
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px; /* Bordes redondeados del botón */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- Imágenes a los costados del título -->
+        <img src="LOGO DE GOBIERNO 2024-04.png" alt="Imagen Izquierda" class="left-image">
+        <div class="header-content">
+            <h1>PROYECTO ESTRÁTEGICO DE IMPULSO AL AGAVE MEZCALERO POBLANO DE LA SECRETARÍA DE DESARROLLO RURAL DEL ESTADO DE PUEBLA</h1>
+            <h2>PADRÓN DE PALENQUES PARA LA ELABORACIÓN DE MEZCAL APOYADOS DURANTE EL CICLO 2022-2024</h2>
+        </div>
+        <img src="LOGOSDR-01.png" alt="Imagen Derecha" class="right-image">
+    </div>
+    
+    <!-- Contenedor del contenido con flexbox -->
+    <div class="content">
+        <!-- Cuadro de descripción -->
+        <div class="description-box">
+            <p>
+                Se presentan a manera de padrón los Palenques Nuevos y Rehabilitados que recibieron algún tipo de apoyo por parte de la Secretaría de Desarrollo Rural del Estado de Puebla, durante el mandato del C. Gobernador Sergio Salomón Céspedes Peregrina. 
+                Las fotografías que acompañan cada sitio son ilustrativas y aunque muestran la evidencia de entrega de apoyos, en algunos casos estas no reflejan la totalidad de los bienes otorgados. 
+                Dichos apoyos van desde Paquetes de Herramienta, Sistemas Fotovoltaicos, hasta apoyos completos de Hebradora, Destiladores y Tinas de Fermentación.
+            </p>
+            <!-- Enlace para descargar los datos del mapa -->
+            <a href="PALENQUES POBLANOS GEORREFERENCIADOS_2022-2024_FINAL.csv" class="download-link" download target="_blank">Descargar Información del Mapa</a>
+        </div>
+
+        <!-- Contenedor del mapa -->
+        <div id="google_my_map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=10RdWYpU2CHPMV2vb0aJSe2p7YR7-toA&hl=es-419&ehbc=2E312F" 
+                    width="100%" height="100%" 
+                    frameborder="0" style="border:0;" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
